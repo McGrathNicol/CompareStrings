@@ -1,1 +1,10 @@
 free	speech
+speech	free
+free	free
+speech	speech
+null	null
+	
+cake	space
+grace	space
+place	cake
+place	space

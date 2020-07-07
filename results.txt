@@ -1,0 +1,9 @@
+free	free	1.0
+free	speech	0.333
+speech	free	0.333
+speech	speech	1.0
+null	null	1.0
+cake	space	0.560
+grace	space	0.600
+place	cake	0.560
+place	space	0.600
