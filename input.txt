@@ -1,6 +1,6 @@
-speech	free
-cake	space
-grace	space
-cake	place
-grace	frown
-free	space
+speech	free	1	2
+cake	space	3	4
+grace	space	5	4
+cake	place	3	6
+grace	frown	5	7
+free	space	2	4

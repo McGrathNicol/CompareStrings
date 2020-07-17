@@ -20,10 +20,10 @@ def work(arr):
         #print(flat_result)
         #print(letter_result)
         if flat_result == 0.0 and letter_result == 0.0:
-            return [arr[0],arr[1],'0.0']
+            return [arr[0],arr[1],arr[2],arr[3],'0.0']
         if flat_result == 1.0 and letter_result == 1.0:
-            return [arr[0],arr[1],'1.0']
-        return [arr[0],arr[1],"{:.3f}".format((flat_result * 0.2) + (letter_result * 0.8))]
+            return [arr[0],arr[1],arr[2],arr[3],'1.0']
+        return [arr[0],arr[1],arr[2],arr[3],"{:.3f}".format((flat_result * 0.2) + (letter_result * 0.8))]
         #"{:.3f}".format()
         #return [arr[0],arr[1],"{:.3f}".format(result)]
 
@@ -86,7 +86,7 @@ def apply_async_with_callback():
     with open('input.txt','r') as f:
         for i, line in enumerate(f):
             arr = line.strip().split('\t')
-            if len(arr)==2:
+            if len(arr)==4:
                 strings += [arr]
                 #print(arr)
                 pool.apply_async(work, args = (arr, ), callback = log_result)
@@ -95,7 +95,7 @@ def apply_async_with_callback():
     #print(result_list)
     with open('results.txt','w') as o:
         for r in result_list:
-            o.write(r[0] + '\t' + r[1] + '\t' + r[2] + '\n')
+            o.write(r[0] + '\t' + r[1] + '\t' + r[2] + '\t' + r[3] + '\t' + r[4] + '\n')
 
 if __name__ == '__main__':
     apply_async_with_callback()

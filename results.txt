@@ -1,6 +1,6 @@
-cake	space	0.720
-speech	free	0.467
-cake	place	0.720
-grace	frown	0.240
-grace	space	0.760
-free	space	0.360
+speech	free	1	2	0.467
+cake	space	3	4	0.720
+grace	space	5	4	0.760
+cake	place	3	6	0.720
+grace	frown	5	7	0.240
+free	space	2	4	0.360
